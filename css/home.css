@@ -1,0 +1,117 @@
+.header {
+  height: 95vh;
+  background-image:
+/*  linear-gradient(
+    to right bottom,
+    rgba(109, 253, 156, 0.7),
+    rgba(109, 253, 48, 0.7)),*/
+  url('../images/map-2-people.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: -12rem;
+}
+
+.header__logo {
+  height: 12.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  color: black;
+  /*background-image: linear-gradient(to right, #6dfd30, #007dff);
+  -webkit-background-clip: text;
+  color: transparent;*/
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  margin-bottom: 6rem;
+  color: black;
+  /*background-image: linear-gradient(to right, #6dfd30, #007dff);
+  -webkit-background-clip: text;
+  color: transparent;*/
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0, 0.3);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
+}
+
+.btn--blue {
+  background-color: #007dff;
+  color: white;
+}
+
+.btn--blue::after {
+  background-color: #007dff;
+}
+
+.btn--green {
+  background-color: #6dfd30;
+  color: white;
+}
+
+.btn--green::after {
+  background-color: #6dfd30;
+}
+
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 1s;
+}
+

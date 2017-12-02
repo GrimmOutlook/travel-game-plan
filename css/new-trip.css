@@ -1,0 +1,108 @@
+.container__main--grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 1.5fr;
+    /*grid-template-rows: 50px 80vh 50px;*/
+    grid-template-areas:
+      "h h h h"
+      "m c c c"
+      "f f f f";
+}
+
+.header {
+  grid-area: h;
+  background-color: #6dfd30;
+}
+
+.menu {
+  grid-area: m;
+  background-color: #6dfd9c;
+}
+
+.content {
+  grid-area: c;
+  background-color: #007dff;
+}
+
+.footer {
+  grid-area: f;
+  background-color: #6dfd30;
+}
+
+.content__grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 80px 50px 50px 50px 50px 50px;
+  grid-template-areas:
+    "h2"
+    "trip-name"
+    "dates"
+    "destination"
+    "something"
+    "details"
+    "button";
+}
+
+
+input {
+  display: block;
+}
+
+textarea {
+  display: block;
+}
+
+.heading-secondary {
+  grid-area: h2;
+}
+
+form#form__new-trip input[name="trip-name"] {
+  grid-area: trip-name;
+}
+
+form#form__new-trip input[name="trip-dates"] {
+  grid-area: dates;
+}
+
+form#form__new-trip input[name="trip-destination"] {
+  grid-area: destination;
+}
+
+form#form__new-trip input[name="trip-something"] {
+  grid-area: something;
+}
+
+form#form__new-trip textarea[name="details-box"] {
+  grid-area: details;
+}
+
+form#form__new-trip input[type="submit"] {
+  grid-area: button;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container__main--grid {
+        grid-template-areas:
+          "m h h h"
+          "c c c c"
+          "f f f f";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

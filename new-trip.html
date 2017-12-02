@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/new-trip.css">
+    <title>Travel Game Plan | Get Yourselves Together</title>
+  </head>
+  <body>
+
+    <div class="container container__main--grid">
+      <div class="header">TRAVEL GAME PLAN</div>
+      <div class="menu">MENU</div>
+      <div class="content content__grid">
+        <h2 class="heading-secondary">Fill in New Trip Details:</h2>
+          <form id="form__new-trip" method="POST" action="/new-trip">
+            <label for="trip-name">Trip Name</label>
+            <input type="text" name="trip-name" id="trip-name" placeholder="Trip Name">
+            <label for="trip-dates">Dates</label>
+            <input type="text" name="trip-dates" id="trip-dates" placeholder="Dates">
+            <label for="trip-destination">Destination Address</label>
+            <input type="text" name="trip-destination" id="trip-destination" placeholder="Destination Address">
+            <label for="trip-something">Something Else?</label>
+            <input type="text" name="trip-something" id="trip-something" placeholder="Something Else">
+
+            <label for="details-box">Trip Summary / Details</label>
+            <textarea id="details-box" name="details-box", placeholder="Trip Summary / Details"></textarea>
+
+            <input type="submit">
+          </form>
+
+      </div>
+
+      <div class="footer">FOOTER</div>
+    </div>
+
+  </body>
+</html>
