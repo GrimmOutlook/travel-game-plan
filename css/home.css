@@ -6,7 +6,7 @@
     rgba(109, 253, 156, 0.7),
     rgba(109, 253, 48, 0.7)),*/
   url('../images/map-2-people.jpg');
-  opacity: 0.4;
+  /*opacity: 0.4;*/
   background-size: cover;
   background-position: center;
   position: relative;
@@ -28,6 +28,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+/*  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);*/
+}
+
+.header__text-box:before {
+  background: inherit;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+  filter: blur(10px);
 }
 
 .heading-primary {

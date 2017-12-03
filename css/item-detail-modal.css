@@ -1,0 +1,65 @@
+.item-detail-modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+
+}
+
+.item-detail-modal__content {
+  height: 25rem;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0,0,0, 0.2);
+  border-radius: 3px;
+}
+
+.content__grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 50px 50px 50px 50px 50px;
+  justify-items: center;
+  grid-template-areas:
+    "trip-name"
+    "instructions"
+    "trip-item"
+    "item-details"
+    "username"
+    "button";
+}
+
+input {
+  display: block;
+}
+
+.heading-secondary {
+  grid-area: trip-name;
+}
+
+.heading-tertiary {
+  grid-area: instructions;
+}
+
+form#form__item-modify input[name="trip-item"] {
+  grid-area: trip-item;
+}
+
+form#form__item-modify input[name="item-details"] {
+  grid-area: item-details;
+}
+
+form#form__item-modify input[name="username"] {
+  grid-area: username;
+}
+
+form#form__item-modify input[type="submit"] {
+  grid-area: button;
+}
+
