@@ -1,0 +1,58 @@
+.success-modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.8);
+
+}
+
+.success-modal__content {
+  height: 25rem;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0,0,0, 0.2);
+  border-radius: 3px;
+}
+
+.success-message,
+  .trip-detail-message,
+  .invite-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.nav-back {
+  float: left;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+.nav-forward {
+  float: right;
+  margin-right: 2rem;
+}
+
+.nav-back a, .nav-forward a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

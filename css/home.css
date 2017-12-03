@@ -6,6 +6,7 @@
     rgba(109, 253, 156, 0.7),
     rgba(109, 253, 48, 0.7)),*/
   url('../images/map-2-people.jpg');
+  opacity: 0.4;
   background-size: cover;
   background-position: center;
   position: relative;
